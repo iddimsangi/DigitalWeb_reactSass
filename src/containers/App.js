@@ -80,7 +80,7 @@ function App() {
             </div>
           </div>
         </div>
-        <a href="#">all services</a>
+        <a href="#" className="btn">all services</a>
       </div>
     </div>
   );
