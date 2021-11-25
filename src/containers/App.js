@@ -8,6 +8,12 @@ import servc3 from "../images/service3.png";
 import technology from "../images/network.png";
 import user1 from "../images/user1.jpg";
 import user2 from "../images/user2.jpg";
+import instagram from "../images/instagram-icon.png";
+import facebook from "../images/facebook-icon.png";
+import linkedin from "../images/linkedin-icon.png";
+import whatsapp from "../images/whatsapp-icon.png";
+import snapchat from "../images/snapchat-icon.png";
+import twitter from "../images/twitter-icon.png";
 import "./App.scss";
 
 function App() {
@@ -119,22 +125,41 @@ function App() {
         <div className="clients">
           <blockquote>
             <p className="details">
-            Alteration literature to or an sympathize mr imprudence. <br/>Of is ferrars subject as enjoyed or tedious cottage.<br/> Procuring as in resembled by in agreeable. 
+              Alteration literature to or an sympathize mr imprudence. <br />
+              Of is ferrars subject as enjoyed or tedious cottage.
+              <br /> Procuring as in resembled by in agreeable.
             </p>
             <div className="client-profile">
               <img src={user1} alt="client-image" />
-              <h4>Angelina <span>Co-founder at xyz</span></h4>
+              <h4>
+                Angelina <span>Co-founder at xyz</span>
+              </h4>
             </div>
           </blockquote>
           <blockquote>
             <p className="details">
-            Scarcely on striking packages by so property in delicate. Up<br/> or well must less rent read walk so be. Easy sold at do hour sing spot.
+              Scarcely on striking packages by so property in delicate. Up
+              <br /> or well must less rent read walk so be. Easy sold at do
+              hour sing spot.
             </p>
             <div className="client-profile">
               <img src={user2} alt="client-image" />
-              <h4>John Doe <span>Director at xyz</span></h4>
+              <h4>
+                John Doe <span>Director at xyz</span>
+              </h4>
             </div>
           </blockquote>
+        </div>
+      </div>
+      <div className="social-media">
+        <h1 className="heading">find us on social media</h1>
+        <div>
+          <img src={facebook} alt="social media" />
+          <img src={instagram} alt="social media" />
+          <img src={twitter} alt="social media" />
+          <img src={whatsapp} alt="social media" />
+          <img src={linkedin} alt="social media" />
+          <img src={snapchat} alt="social media" />
         </div>
       </div>
     </div>
