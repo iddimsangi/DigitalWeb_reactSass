@@ -14,6 +14,9 @@ import linkedin from "../images/linkedin-icon.png";
 import whatsapp from "../images/whatsapp-icon.png";
 import snapchat from "../images/snapchat-icon.png";
 import twitter from "../images/twitter-icon.png";
+import location from "../images/location.png";
+import email from "../images/icons8-email-64.png";
+import caller from "../images/icons8-call-64.png";
 import "./App.scss";
 
 function App() {
@@ -162,6 +165,44 @@ function App() {
           <img src={snapchat} alt="social media" />
         </div>
       </div>
+      <footer>
+        <div className="footer-contents">
+          <div className="footer-contents--box">
+            <img src={logo} alt="logo-img"/>
+            <p>
+            Certainty determine at of arranging perceived situation or.<br/>
+            Or wholly pretty county in oppose >Favour met  <br/>Favour met itself wanted settle<br/> put garret twenty. In astonished apartments
+            </p>
+          </div>
+          <div className="footer-contents--box">
+            <h4>contact us</h4>
+
+            <div>
+              <div>
+                <img src={location} alt="icon" />
+                <h5>World company ltd</h5>
+              </div>
+              <div>
+              <img src={caller} alt="icon" />
+                <h5>+1 23456908</h5>
+              </div>
+              <div>
+              <img src={email} alt="icon" />
+                <h5>imsangi@icloud.com</h5>
+              </div>
+            </div>
+
+          </div>
+          <div className="footer-contents--box">
+            <h4>get in touch</h4>
+            <input type="text" placeholder="your email"/>
+            <a href="#" className="btn" >Subscribe</a>
+          </div>
+        </div>
+        <div className="footer-copyright">
+          <h4>This site is designed by iddiMsangi</h4>
+        </div>
+      </footer>
     </div>
   );
 }
