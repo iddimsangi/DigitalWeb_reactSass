@@ -6,6 +6,8 @@ import servc1 from "../images/service1.png";
 import servc2 from "../images/service2.png";
 import servc3 from "../images/service3.png";
 import technology from "../images/network.png";
+import user1 from "../images/user1.jpg";
+import user2 from "../images/user2.jpg";
 import "./App.scss";
 
 function App() {
@@ -110,6 +112,29 @@ function App() {
             </ul>
           </div>
           <img src={technology} alt="technology image" />
+        </div>
+      </div>
+      <div className="client-section">
+        <h1 className="heading">what clients say</h1>
+        <div className="clients">
+          <blockquote>
+            <p className="details">
+            Alteration literature to or an sympathize mr imprudence. <br/>Of is ferrars subject as enjoyed or tedious cottage.<br/> Procuring as in resembled by in agreeable. 
+            </p>
+            <div className="client-profile">
+              <img src={user1} alt="client-image" />
+              <h4>Angelina <span>Co-founder at xyz</span></h4>
+            </div>
+          </blockquote>
+          <blockquote>
+            <p className="details">
+            Scarcely on striking packages by so property in delicate. Up<br/> or well must less rent read walk so be. Easy sold at do hour sing spot.
+            </p>
+            <div className="client-profile">
+              <img src={user2} alt="client-image" />
+              <h4>John Doe <span>Director at xyz</span></h4>
+            </div>
+          </blockquote>
         </div>
       </div>
     </div>
