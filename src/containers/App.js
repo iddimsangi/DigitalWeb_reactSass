@@ -17,6 +17,7 @@ import twitter from "../images/twitter-icon.png";
 import location from "../images/location.png";
 import email from "../images/icons8-email-64.png";
 import caller from "../images/icons8-call-64.png";
+import waves2 from "../images/wave2.png";
 import "./App.scss";
 
 function App() {
@@ -166,12 +167,16 @@ function App() {
         </div>
       </div>
       <footer>
+        <img src={waves2} alt="waves2" />
         <div className="footer-contents">
           <div className="footer-contents--box">
-            <img src={logo} alt="logo-img"/>
+            <img src={logo} alt="logo-img" />
             <p>
-            Certainty determine at of arranging perceived situation or.<br/>
-            Or wholly pretty county in oppose >Favour met  <br/>Favour met itself wanted settle<br/> put garret twenty. In astonished apartments
+              Certainty determine at of arranging perceived situation or.
+              <br />
+              Or wholly pretty county in oppose >Favour met <br />
+              Favour met itself wanted settle
+              <br /> put garret twenty. In astonished apartments
             </p>
           </div>
           <div className="footer-contents--box">
@@ -183,20 +188,21 @@ function App() {
                 <h5>World company ltd</h5>
               </div>
               <div>
-              <img src={caller} alt="icon" />
+                <img src={caller} alt="icon" />
                 <h5>+1 23456908</h5>
               </div>
               <div>
-              <img src={email} alt="icon" />
+                <img src={email} alt="icon" />
                 <h5>imsangi@icloud.com</h5>
               </div>
             </div>
-
           </div>
           <div className="footer-contents--box">
             <h4>get in touch</h4>
-            <input type="text" placeholder="your email"/>
-            <a href="#" className="btn" >Subscribe</a>
+            <input type="text" placeholder="your email" />
+            <a href="#" className="btn">
+              Subscribe
+            </a>
           </div>
         </div>
         <div className="footer-copyright">
