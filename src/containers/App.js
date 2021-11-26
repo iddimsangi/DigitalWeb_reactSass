@@ -177,7 +177,7 @@ function App() {
         <img src={waves2} alt="waves2" />
         <div className="footer-contents">
           <div className="footer-contents--box">
-            <img src={logo} alt="logo-img" />
+            <img src={logo} className="App-logo" alt="logo-img" />
             <p>
               Certainty determine at of arranging perceived situation or.
               <br />
