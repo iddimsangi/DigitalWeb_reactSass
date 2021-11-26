@@ -1,5 +1,4 @@
-
- .App--nav {
+.App--nav {
   display: flex;
   justify-content: space-between;
   background-image: linear-gradient(to top left, #a517ba, #5f1732);
@@ -29,15 +28,13 @@
 .App-header {
   background-image: linear-gradient(to top left, #a517ba, #5f1732);
   width: 100%;
- 
+
   &--homepage {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 80%;
     margin-left: 10%;
-  
-
   }
   &--wave {
     width: 100%;
@@ -79,7 +76,7 @@
   margin-left: 1rem;
 }
 .home-img {
-  width:50%;
+  width: 50%;
 }
 /*=================================ABOUT SECTION======================================*/
 
@@ -254,8 +251,8 @@
   width: 100%;
   display: flex;
   justify-content: center;
-   align-items: center;
-  
+  align-items: center;
+
   padding: 10rem 0;
   background-color: rgb(247, 247, 247);
   .heading::before {
@@ -267,7 +264,8 @@
   display: flex;
   flex-direction: column;
 
- .heading, div {
+  .heading,
+  div {
     display: flex;
     img {
       width: 8rem;
@@ -354,7 +352,7 @@ footer {
 /*----------------------------TOGGLE BARS-----------------------------------------------*/
 
 /*=================================MEDIA QUERIES=======================================================*/
-@media only screen and (max-width:375px){
+@media only screen and (max-width: 375px) {
   .App--nav {
     .bars-icon {
       margin: 2rem;
@@ -380,17 +378,14 @@ footer {
   .App-header {
     background-image: linear-gradient(to top left, #a517ba, #5f1732);
     width: 100%;
-    
+
     &--homepage {
       display: flex;
       justify-content: space-between;
       align-items: center;
       width: 80%;
       margin-left: 10%;
-    
-  
     }
-
   }
   .hompage--content {
     padding-top: 2rem;
@@ -415,7 +410,7 @@ footer {
       font-size: 1.2rem;
       img {
         height: 2rem;
-        margin-right:1rem;
+        margin-right: 1rem;
       }
     }
   }
@@ -424,285 +419,270 @@ footer {
     margin-top: 1rem;
   }
   .home-img {
-    width:15rem;
+    width: 15rem;
   }
-
 
   /*--------------------HEADING-----------------------------------*/
-.heading::before {
-  height: 0.3rem;
-  width: 8rem;
-  background-color: #5f1732;
-  transform: translateY(4rem);
-  margin-left: 5rem;
-}
-.heading::after {
-  height: 0.6rem;
-  width: 3rem;
-  background-color: #5f1732;
-  margin-left:7.5rem;
-  transform: translateY(.5rem);
-  
-}
-.heading {
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
-}
-/*--------------------HEADING-----------------------------------*/
-
-.About-section {
-  padding: 6rem 1rem;
-  &--details {
-    width: 90%;
-    &--detail {
-      width: 100%;
-      padding: 1rem;
-      div {
-        h3 {
-          font-size: 1.8rem;
-
-        }
-        p {
-          font-size: 1.6rem;
-        }
-      }
-    }
-  }
-}
-
-/*=================================why choose us=============================================================================*/
-.why-section {
-  padding: 5rem 0;
   .heading::before {
-    margin-left: 7rem;
+    height: 0.3rem;
+    width: 8rem;
+    background-color: #5f1732;
+    transform: translateY(4rem);
+    margin-left: 5rem;
   }
   .heading::after {
-    margin-left:9.4rem;
-    
-    
+    height: 0.6rem;
+    width: 3rem;
+    background-color: #5f1732;
+    margin-left: 7.5rem;
+    transform: translateY(0.5rem);
   }
-  &--content {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    // flex-wrap: wrap-reverse;
-    align-items: center;
-    div {
-      width: 50%;
-      float: right;
-      padding-left:5%;
-      h1 {
-        font-size: 2.2rem;
-        font-weight: 400;
-        // margin-left: -5rem;
-      }
-      ul li {
-        font-size: 1.4rem;
-        font-weight: 300;
-      }
-    }
-    img {
-      margin-top: 1.5rem;
-      width: 50%;
-    }
+  .heading {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
   }
-}
+  /*--------------------HEADING-----------------------------------*/
 
-
-/*==========================client-section================================================================*/
-.client-section {
-  width: 100%;
-  .heading{
-    font-size: 2.2rem;
-  }
-  .heading::before {
-    margin-left: 6rem;
-  }
-  .heading::after {
-    margin-left: 8.5rem;
-    transform: translateY(.8rem);
-  }
-
-  .clients {
-    width: 90%;
-    margin-left: 5%;
-    margin-top: 2rem;
-    display: flex;
-    justify-content: center;
-    // justify-content: space-evenly;
-    align-items: center;
-    blockquote {
-  
-      &:last-of-type {
-        margin-left: 2rem;
-      }
-      
-      .client-profile {
-        display: flex;
-        margin-top: 1.5em;
-        // justify-content:space-between;
-        align-items: center;
-        img {
-          width: 7rem;
-          border-radius: 50%;
-          margin-right: .5rem;
-        }
-        h4 {
-          font-size: 1.2rem;
-          // font-weight: 500;
-          
-        }
-      }
-    }
-  }
-}
-/*===========================social-media===============================================================*/
-.social-media {
-  width: 100%;
-  padding: 6rem 2rem;
-  background-color: rgb(247, 247, 247);
-div{
-  margin-left: 2rem;
-}
- .heading, div {
-    display: flex;
-    img {
-      width: 15%;
-      height: 15%;
-    }
-  }
-}
-
-/*===========================FOOTER===============================================================*/
-footer {
-  width: 100%;
-
-  .footer-contents {
-    padding-top: 5rem;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    &--box{
-      &:first-child{
-        flex-grow: 1;
-        margin-bottom: 1rem;
-        // background-color: orange;
-        // width: 100%;
-        // display: block;
-      }
-      .App-logo{
-        width:50%;
-        margin-left: -1rem;
-      }
-      .btn {
-        padding: 1rem 1.5rem;
-        border-radius: 0.8rem;
-        width: 60%;
-      }
-      font-size: 1.5rem;
-      font-weight: 300;
-      display: flex;
-      flex-direction: column;
-      div {
-        
+  .About-section {
+    padding: 6rem 1rem;
+    &--details {
+      width: 90%;
+      &--detail {
+        width: 100%;
+        padding: 1rem;
         div {
-          
-          display: flex;
-          align-items: center;
-          img {
-            width: 2.5rem;
+          h3 {
+            font-size: 1.8rem;
+          }
+          p {
+            font-size: 1.6rem;
           }
         }
       }
-      h4 {
-        text-transform: uppercase;
-        margin-bottom: 2rem;
-      }
-      img {
-        width: 25%;
-        margin-bottom: 1.3rem;
-      }
-      
     }
   }
- 
-}
 
-/*----------------------------TOGGLE BARS-----------------------------------------------*/
-.toggle_bars {
-  display: none;
-}
-/*----------------------------TOGGLE BARS-----------------------------------------------*/
+  /*=================================why choose us=============================================================================*/
+  .why-section {
+    padding: 5rem 0;
+    .heading::before {
+      margin-left: 7rem;
+    }
+    .heading::after {
+      margin-left: 9.4rem;
+    }
+    &--content {
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      // flex-wrap: wrap-reverse;
+      align-items: center;
+      div {
+        width: 50%;
+        float: right;
+        padding-left: 5%;
+        h1 {
+          font-size: 2.2rem;
+          font-weight: 400;
+          // margin-left: -5rem;
+        }
+        ul li {
+          font-size: 1.4rem;
+          font-weight: 300;
+        }
+      }
+      img {
+        margin-top: 1.5rem;
+        width: 50%;
+      }
+    }
+  }
 
-
-}
-
-@media only screen and (max-width:320px){
   /*==========================client-section================================================================*/
-  .heading{
-    font-size:2rem;
+  .client-section {
+    width: 100%;
+    .heading {
+      font-size: 2.2rem;
+    }
+    .heading::before {
+      margin-left: 6rem;
+    }
+    .heading::after {
+      margin-left: 8.5rem;
+      transform: translateY(0.8rem);
+    }
+
+    .clients {
+      width: 90%;
+      margin-left: 5%;
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+      // justify-content: space-evenly;
+      align-items: center;
+      blockquote {
+        &:last-of-type {
+          margin-left: 2rem;
+        }
+
+        .client-profile {
+          display: flex;
+          margin-top: 1.5em;
+          // justify-content:space-between;
+          align-items: center;
+          img {
+            width: 7rem;
+            border-radius: 50%;
+            margin-right: 0.5rem;
+          }
+          h4 {
+            font-size: 1.2rem;
+            // font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+  /*===========================social-media===============================================================*/
+  .social-media {
+    width: 100%;
+    padding: 6rem 2rem;
+    background-color: rgb(247, 247, 247);
+    div {
+      margin-left: 2rem;
+    }
+    .heading,
+    div {
+      display: flex;
+      img {
+        width: 15%;
+        height: 15%;
+      }
+    }
+  }
+
+  /*===========================FOOTER===============================================================*/
+  footer {
+    width: 100%;
+
+    .footer-contents {
+      padding-top: 5rem;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      width: 90%;
+      &--box {
+        &:first-child {
+          flex-grow: 1;
+          margin-bottom: 1rem;
+          // background-color: orange;
+          // width: 100%;
+          // display: block;
+        }
+        .App-logo {
+          width: 50%;
+          margin-left: -1rem;
+        }
+        .btn {
+          padding: 1rem 1.5rem;
+          border-radius: 0.8rem;
+          width: 60%;
+        }
+        font-size: 1.5rem;
+        font-weight: 300;
+        display: flex;
+        flex-direction: column;
+        div {
+          div {
+            display: flex;
+            align-items: center;
+            img {
+              width: 2.5rem;
+            }
+          }
+        }
+        h4 {
+          text-transform: uppercase;
+          margin-bottom: 2rem;
+        }
+        img {
+          width: 25%;
+          margin-bottom: 1.3rem;
+        }
+      }
+    }
+  }
+
+  /*----------------------------TOGGLE BARS-----------------------------------------------*/
+  .toggle_bars {
+    display: none;
+  }
+  /*----------------------------TOGGLE BARS-----------------------------------------------*/
+}
+
+@media only screen and (max-width: 320px) {
+  /*==========================client-section================================================================*/
+  .heading {
+    font-size: 2rem;
+    // margin-left: -2rem;
+    // width: 100%;
   }
   .About-section {
+    width: 100%;
     .heading::before {
       margin-left: 4.6rem;
       transform: translateY(3.4rem);
     }
     .heading::after {
-      transform: translateY(.6rem);
+      transform: translateY(0.6rem);
+      margin-right: 3rem;
     }
   }
 
   .client-section {
-  width: 100%;
-  .heading{
-    font-size:1.7rem;
-  }
-  .heading::before {
-    margin-left: 4rem;
-    transform: translateY(3.4rem);
-  }
-  .heading::after {
-    margin-left: 6.5rem;
-    transform: translateY(.8rem);
-  }
+    width: 100%;
+    .heading {
+      font-size: 1.7rem;
+    }
+    .heading::before {
+      margin-left: 4rem;
+      transform: translateY(3.4rem);
+    }
+    .heading::after {
+      margin-left: 6.5rem;
+      transform: translateY(0.8rem);
+    }
 
-  .clients {
-    blockquote {
-  
-      &:last-of-type {
-        margin-left: 1.5rem;
-      }
-      
-      .client-profile {
-        margin-top: 1em;
-        img {
-          width: 5rem;
+    .clients {
+      blockquote {
+        &:last-of-type {
+          margin-left: 1.5rem;
         }
-        h4 {
-          font-size: 1rem;
-          
+
+        .client-profile {
+          margin-top: 1em;
+          img {
+            width: 5rem;
+          }
+          h4 {
+            font-size: 1rem;
+          }
         }
       }
     }
   }
-}
 
-
-.why-section{
-  
+  .why-section {
     .heading::before {
       margin-left: 6.6rem;
       transform: translateY(3.5rem);
     }
     .heading::after {
-      transform: translateY(.6rem);
-      
+      transform: translateY(0.6rem);
     }
-  
-}
+  }
 }

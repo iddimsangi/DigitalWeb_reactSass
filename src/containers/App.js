@@ -18,7 +18,7 @@ import location from "../images/location.png";
 import email from "../images/icons8-email-64.png";
 import caller from "../images/icons8-call-64.png";
 import waves2 from "../images/wave2.png";
-import bars from "../images/icons8-menu-24.png"
+import bars from "../images/icons8-menu-24.png";
 import "./App.scss";
 
 function App() {
@@ -26,31 +26,29 @@ function App() {
     <div className="App">
       <input className="toggle_bars" type="checkbox" />
       <nav className="App--nav">
-          <img src={logo} alt="logo" className="App-logo" />
-          <ul className="App--nav-links">
-            <li>
-              <a href="#">Home</a>
-            </li>{" "}
-            <li>
-              <a href="#">services</a>
-            </li>{" "}
-            <li>
-              <a href="#">about us</a>
-            </li>{" "}
-            <li>
-              <a href="#">testimonials</a>
-            </li>{" "}
-            <li>
-              <a href="#">contact</a>
-            </li>
-          </ul>
-          <label className="bars-icon" htmlFor="toggle_bars">
+        <img src={logo} alt="logo" className="App-logo" />
+        <ul className="App--nav-links">
+          <li>
+            <a href="#">Home</a>
+          </li>{" "}
+          <li>
+            <a href="#">services</a>
+          </li>{" "}
+          <li>
+            <a href="#">about us</a>
+          </li>{" "}
+          <li>
+            <a href="#">testimonials</a>
+          </li>{" "}
+          <li>
+            <a href="#">contact</a>
+          </li>
+        </ul>
+        <label className="bars-icon" htmlFor="toggle_bars">
           <img src={bars} alt="bars-img" />
-          </label>
-        
-        </nav>
+        </label>
+      </nav>
       <header className="App-header">
-        
         <div className="App-header--homepage">
           <div className="hompage--content">
             <h1>
