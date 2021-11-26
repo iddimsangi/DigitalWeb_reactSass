@@ -276,6 +276,7 @@
 footer {
   img {
     width: 100%;
+    margin-top: -.2rem;
   }
   background-image: linear-gradient(to right, #a517ba, #5f1732);
   color: #ccc;
@@ -352,7 +353,7 @@ footer {
 /*----------------------------TOGGLE BARS-----------------------------------------------*/
 
 /*=================================MEDIA QUERIES=======================================================*/
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 414px) {
   .App--nav {
     .bars-icon {
       margin: 2rem;
@@ -614,6 +615,9 @@ footer {
           margin-bottom: 1.3rem;
         }
       }
+      input{
+        width: 95%;
+      }
     }
   }
 
@@ -683,6 +687,40 @@ footer {
     }
     .heading::after {
       transform: translateY(0.6rem);
+    }
+  }
+}
+@media only screen and (max-width: 280px){
+  .App-header {
+    background-image: linear-gradient(to top left, #a517ba, #5f1732);
+    width: 100%;
+
+    &--homepage {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 80%;
+      margin-left: 10%;
+    }
+  }
+  .About-section--details--detail img{
+    width: 6rem;
+  }
+  .why-section--content div h1 {
+    margin: 0;
+  }
+
+  .client-section{
+    padding: 2rem;
+    .heading{
+      font-size: 1.6rem;
+    }
+    .heading::after{
+      transform: translateY(1rem);
+    }
+    .clients {
+      flex-wrap: wrap;
     }
   }
 }
