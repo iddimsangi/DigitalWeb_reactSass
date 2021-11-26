@@ -25,9 +25,9 @@ function App() {
   return (
     <div className="App">
       <input className="toggle_bars" type="checkbox" />
-      <nav className="App-header--nav">
+      <nav className="App--nav">
           <img src={logo} alt="logo" className="App-logo" />
-          <ul className="App-header--nav-links">
+          <ul className="App--nav-links">
             <li>
               <a href="#">Home</a>
             </li>{" "}

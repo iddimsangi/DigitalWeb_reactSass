@@ -1,33 +1,35 @@
-.App-header {
+
+ .App--nav {
+  display: flex;
+  justify-content: space-between;
   background-image: linear-gradient(to top left, #a517ba, #5f1732);
-  width: 100%;
-  &--nav {
-    display: flex;
-    justify-content: space-between;
-    background-image: linear-gradient(to top left, #a517ba, #5f1732);
-    position: sticky;
-    top: 0;
-    // align-items: center;
-    .bars-icon {
-      margin: 1rem;
-      display: none;
-    }
-    &-links {
-      list-style: none;
-      margin-top: 1rem;
-      li {
-        display: inline-block;
-        padding-right: 2rem;
-        a {
-          text-decoration: none;
-          color: #ccc;
-          text-transform: uppercase;
-          font-size: 1.6rem;
-          font-weight: 400;
-        }
+  position: sticky;
+  top: 0;
+  // align-items: center;
+  .bars-icon {
+    margin: 1rem;
+    display: none;
+  }
+  &-links {
+    list-style: none;
+    margin-top: 1rem;
+    li {
+      display: inline-block;
+      padding-right: 2rem;
+      a {
+        text-decoration: none;
+        color: #ccc;
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        font-weight: 400;
       }
     }
   }
+}
+.App-header {
+  background-image: linear-gradient(to top left, #a517ba, #5f1732);
+  width: 100%;
+ 
   &--homepage {
     display: flex;
     justify-content: space-between;
@@ -352,3 +354,161 @@ footer {
 /*----------------------------TOGGLE BARS-----------------------------------------------*/
 
 /*=================================MEDIA QUERIES=======================================================*/
+@media only screen and (max-width:375px){
+  .App--nav {
+    .bars-icon {
+      margin: 2rem;
+      display: block;
+      position: sticky;
+      top: 0;
+    }
+    &-links {
+      display: none;
+      li {
+        // display: inline-block;
+        // padding-right: 2rem;
+        a {
+          // text-decoration: none;
+          // color: #ccc;
+          // text-transform: uppercase;
+          // font-size: 1.6rem;
+          // font-weight: 400;
+        }
+      }
+    }
+  }
+  .App-header {
+    background-image: linear-gradient(to top left, #a517ba, #5f1732);
+    width: 100%;
+    
+    &--homepage {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 80%;
+      margin-left: 10%;
+    
+  
+    }
+
+  }
+  .hompage--content {
+    padding-top: 2rem;
+    h1 {
+      font-size: 2rem;
+      text-transform: uppercase;
+      color: #ccc;
+      // padding-bottom: 4rem;
+      span {
+        text-transform: lowercase;
+        font-size: 1.2rem;
+        display: block;
+        font-weight: 400;
+        line-height: 120%;
+        // padding: 2rem 0;
+      }
+    }
+    div {
+      display: flex;
+      align-items: center;
+      color: #ccc;
+      font-size: 1.2rem;
+      img {
+        height: 2rem;
+        margin-right:1rem;
+      }
+    }
+  }
+  .App-logo {
+    height: 3rem;
+    margin-top: 1rem;
+  }
+  .home-img {
+    width:15rem;
+  }
+
+
+  /*--------------------HEADING-----------------------------------*/
+.heading::before {
+  height: 0.3rem;
+  width: 8rem;
+  background-color: #5f1732;
+  transform: translateY(4rem);
+  margin-left: 5rem;
+}
+.heading::after {
+  height: 0.6rem;
+  width: 3rem;
+  background-color: #5f1732;
+  margin-left:7.5rem;
+  transform: translateY(.5rem);
+  
+}
+.heading {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+/*--------------------HEADING-----------------------------------*/
+
+.About-section {
+  padding: 6rem 1rem;
+  &--details {
+    width: 90%;
+    &--detail {
+      width: 100%;
+      padding: 1rem;
+      div {
+        h3 {
+          font-size: 1.8rem;
+
+        }
+        p {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+}
+
+/*=================================why choose us=============================================================================*/
+.why-section {
+  padding: 5rem 0;
+  .heading::before {
+    margin-left: 7rem;
+  }
+  .heading::after {
+    margin-left:9.4rem;
+    
+    
+  }
+  &--content {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    // flex-wrap: wrap-reverse;
+    align-items: center;
+    div {
+      width: 50%;
+      float: right;
+      padding-left:5%;
+      h1 {
+        font-size: 2.2rem;
+        font-weight: 400;
+        // margin-left: -5rem;
+      }
+      ul li {
+        font-size: 1.4rem;
+        font-weight: 300;
+      }
+    }
+    img {
+      margin-top: 1.5rem;
+      width: 50%;
+    }
+  }
+}
+
+
+}
