@@ -1,12 +1,17 @@
 .App-header {
-  background-image: linear-gradient(to right, #a517ba, #5f1732);
-  // height: 100vh;
-  // padding: 0 2rem;
-
+  background-image: linear-gradient(to top left, #a517ba, #5f1732);
+  width: 100%;
   &--nav {
     display: flex;
     justify-content: space-between;
+    background-image: linear-gradient(to top left, #a517ba, #5f1732);
+    position: sticky;
+    top: 0;
     // align-items: center;
+    .bars-icon {
+      margin: 1rem;
+      display: none;
+    }
     &-links {
       list-style: none;
       margin-top: 1rem;
@@ -27,12 +32,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5rem 10rem;
+    width: 80%;
+    margin-left: 10%;
+  
+
   }
   &--wave {
     width: 100%;
     height: auto;
-    margin-bottom: -4px;
+    margin-bottom: -6px;
   }
 }
 .hompage--content {
@@ -69,7 +77,7 @@
   margin-left: 1rem;
 }
 .home-img {
-  width: 50%;
+  width:50%;
 }
 /*=================================ABOUT SECTION======================================*/
 
@@ -111,17 +119,22 @@
   background-image: linear-gradient(to right, #a517ba, #5f1732);
 }
 .About-section {
-  padding: 6rem 5rem;
+  padding: 6rem 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-
+  width: 100%;
   &--details {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
     &--detail {
+      width: 30%;
+      min-width: 20rem;
       text-align: center;
-      padding: 4rem;
+      padding: 2rem;
       img {
         width: 8rem;
         margin-bottom: 1rem;
@@ -144,10 +157,11 @@
 
 /*=================================why choose us=============================================================================*/
 .why-section {
-  padding: 8rem 4rem;
+  padding: 8rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
   background-color: rgb(247, 247, 247);
   .heading::before {
     margin-left: 7rem;
@@ -156,10 +170,15 @@
     margin-left: 12rem;
   }
   &--content {
+    width: 80%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     div {
+      width: 50%;
+      float: right;
+      padding-left: 10%;
       h1 {
         font-size: 4rem;
         font-weight: 400;
@@ -171,7 +190,7 @@
       }
     }
     img {
-      width: 40%;
+      width: 30%;
     }
   }
 }
@@ -212,7 +231,7 @@
         // justify-content:space-between;
         align-items: center;
         img {
-          width: 10%;
+          width: 8rem;
           border-radius: 50%;
           margin-right: 1rem;
         }
@@ -231,7 +250,11 @@
 /*===========================social-media===============================================================*/
 .social-media {
   width: 100%;
-  padding: 10rem;
+  display: flex;
+  justify-content: center;
+   align-items: center;
+  
+  padding: 10rem 0;
   background-color: rgb(247, 247, 247);
   .heading::before {
     display: none;
@@ -240,17 +263,12 @@
     display: none;
   }
   display: flex;
-  // justify-content: space-between;
-  align-items: center;
   flex-direction: column;
-  div {
-    width: 60%;
-    margin-left: 30%;
+
+ .heading, div {
     display: flex;
-    // justify-content: space-between;
-    align-items: center;
     img {
-      width: 8%;
+      width: 8rem;
     }
   }
 }
@@ -326,3 +344,11 @@ footer {
     padding: 2rem;
   }
 }
+
+/*----------------------------TOGGLE BARS-----------------------------------------------*/
+.toggle_bars {
+  display: none;
+}
+/*----------------------------TOGGLE BARS-----------------------------------------------*/
+
+/*=================================MEDIA QUERIES=======================================================*/

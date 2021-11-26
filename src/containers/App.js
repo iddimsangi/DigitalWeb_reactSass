@@ -18,13 +18,14 @@ import location from "../images/location.png";
 import email from "../images/icons8-email-64.png";
 import caller from "../images/icons8-call-64.png";
 import waves2 from "../images/wave2.png";
+import bars from "../images/icons8-menu-24.png"
 import "./App.scss";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <nav className="App-header--nav">
+      <input className="toggle_bars" type="checkbox" />
+      <nav className="App-header--nav">
           <img src={logo} alt="logo" className="App-logo" />
           <ul className="App-header--nav-links">
             <li>
@@ -43,7 +44,13 @@ function App() {
               <a href="#">contact</a>
             </li>
           </ul>
+          <label className="bars-icon" htmlFor="toggle_bars">
+          <img src={bars} alt="bars-img" />
+          </label>
+        
         </nav>
+      <header className="App-header">
+        
         <div className="App-header--homepage">
           <div className="hompage--content">
             <h1>
@@ -174,7 +181,7 @@ function App() {
             <p>
               Certainty determine at of arranging perceived situation or.
               <br />
-              Or wholly pretty county in oppose >Favour met <br />
+              Or wholly pretty county in oppose Favour met <br />
               Favour met itself wanted settle
               <br /> put garret twenty. In astonished apartments
             </p>
