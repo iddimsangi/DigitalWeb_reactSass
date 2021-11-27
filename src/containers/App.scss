@@ -1,4 +1,8 @@
 .App--nav {
+  // padding:0 2rem;
+  padding-left: 1%;
+  padding-right: 2%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   background-image: linear-gradient(to top left, #a517ba, #5f1732);
@@ -71,9 +75,9 @@
   }
 }
 .App-logo {
-  height: 4rem;
+  height: 3.5rem;
   margin-top: 1rem;
-  margin-left: 1rem;
+  // margin-left:2.5rem;
 }
 .home-img {
   width: 50%;
@@ -385,15 +389,10 @@ footer{
     margin-left: -4rem;
   }
 }
-@media only screen and (max-width:689){
-
-
-
-}
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 689px) {
   .App--nav {
     .bars-icon {
-      margin: 2rem;
+ margin-right: 2.5rem;
       display: block;
       position: sticky;
       top: 0;
