@@ -353,6 +353,43 @@ footer {
 /*----------------------------TOGGLE BARS-----------------------------------------------*/
 
 /*=================================MEDIA QUERIES=======================================================*/
+@media only screen and (max-width:1025px){
+  .App--nav {
+    
+    &-links {
+      margin-right: 2rem;
+    }
+  }
+
+footer{
+
+  .footer-contents{
+    padding:1rem 4rem;
+    width: 100%;
+    margin-left: 0;
+    &--box{
+      &:nth-child(2){
+        padding-right: 1.5rem;
+      }
+    }
+  }
+}
+
+}
+@media only screen and (max-width:769px){
+  .heading{
+    // font-size: 2rem;
+  }
+  .why-section--content div h1{
+    font-size: 3rem;
+    margin-left: -4rem;
+  }
+}
+@media only screen and (max-width:689){
+
+
+
+}
 @media only screen and (max-width: 414px) {
   .App--nav {
     .bars-icon {
