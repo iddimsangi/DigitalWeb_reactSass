@@ -26,8 +26,8 @@ function App() {
   return (
     <div className="App">
       <nav className="App--nav">
-      <input id="navi_toggle" type="checkbox" className="toggle_bars" />
-      <div className="toggle_background">&nbsp;</div>
+        <input id="navi_toggle" type="checkbox" className="toggle_bars" />
+        <div className="toggle_background">&nbsp;</div>
         <img src={logo} alt="logo" className="App-logo" />
         <ul className="App--nav-links">
           <li>

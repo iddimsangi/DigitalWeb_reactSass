@@ -19,12 +19,16 @@
     align-items: center;
     z-index: 2000;
     display: none;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    img, .cross-icon{
-      margin-left: .5rem;
-      margin-top: .5rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    img,
+    .cross-icon {
+      margin-left: 0.5rem;
+      margin-top: 0.5rem;
+      position: fixed;
     }
-    .cross-icon{
+    .cross-icon {
       display: none;
     }
   }
@@ -34,7 +38,7 @@
     li {
       display: inline-block;
       padding-right: 2rem;
-      transition: all .3s;
+      transition: all 0.3s;
       a {
         text-decoration: none;
         color: #ccc;
@@ -45,79 +49,80 @@
     }
   }
 
-/*----------------------------TOGGLE BARS-----------------------------------------------*/
-@keyframes moveInRight {
-  0%{
-    opacity: 0;
-    transform: translateX(-100%);
+  /*----------------------------TOGGLE BARS-----------------------------------------------*/
+  @keyframes moveInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
   }
-  100%{
-    opacity: 1;
-    transform: translateX(0);
-  }
-  
-}
-.toggle_bars {
-  display: none;
-}
-.toggle_bars:checked ~ .bars-icon{
-  .bars{
+  .toggle_bars {
     display: none;
   }
-  .cross-icon{
-    display: block;
-  }
-}
-
-.toggle_bars:checked ~ &-links{
-  display: block;
-  position: absolute;
-  z-index: 1500;
-  top: 50%;
-  left: 35%;
-  height: 100vh;
-  width: 100%;
-  // transform: translate(-50%, 10%);
-  li{
-    display: block;
-    margin-bottom: 2.5rem;
-    animation: moveInRight .8s ease-in-out;
-  a{
-    &:link,
-    &:visited{ 
-      padding: 1rem 1.5rem;
-      background-image: linear-gradient(120deg, #ca0d52 0%, #a517ba 50%, #fff 50%);
-      background-size: 200%;
-      transition: all .4s;
-      color: #fff;
+  .toggle_bars:checked ~ .bars-icon {
+    .bars {
+      display: none;
     }
-    &:hover,
-    &:active{
-      background-position: 100%;
-      color:#222
+    .cross-icon {
+      display: block;
     }
   }
+
+  .toggle_bars:checked ~ &-links {
+    display: block;
+    position: absolute;
+    z-index: 1500;
+    top: 50%;
+    left: 35%;
+    height: 100vh;
+    width: 100%;
+    // transform: translate(-50%, 10%);
+    li {
+      display: block;
+      margin-bottom: 2.5rem;
+      animation: moveInRight 0.8s ease-in-out;
+      a {
+        &:link,
+        &:visited {
+          padding: 1rem 1.5rem;
+          background-image: linear-gradient(
+            120deg,
+            #ca0d52 0%,
+            #a517ba 50%,
+            #fff 50%
+          );
+          background-size: 200%;
+          transition: all 0.4s;
+          color: #fff;
+        }
+        &:hover,
+        &:active {
+          background-position: 100%;
+          color: #222;
+        }
+      }
+    }
   }
-}
-.toggle_bars:checked ~ .toggle_background{
-  transform: scale(50);
-}
-.toggle_background{
-  height: 3rem;
-  width: 3rem;
-  border-radius: 50%;
-  position: fixed;
-  // background-color:green;
-  top: 1.5rem;
-  right: 3.6rem;
-  z-index: 1000;
-  background-image: radial-gradient(#a517ba, #5f1732);
-  transition: all .8s;
-}
-/*----------------------------TOGGLE BARS-----------------------------------------------*/
-
-
-
+  .toggle_bars:checked ~ .toggle_background {
+    transform: scale(50);
+  }
+  .toggle_background {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    position: fixed;
+    // background-color:green;
+    top: 1.5rem;
+    right: 3.6rem;
+    z-index: 1000;
+    background-image: radial-gradient(#a517ba, #5f1732);
+    transition: all 0.8s;
+  }
+  /*----------------------------TOGGLE BARS-----------------------------------------------*/
 }
 .App-header {
   background-image: linear-gradient(to top left, #a517ba, #5f1732);
@@ -174,9 +179,6 @@
   width: 50%;
 }
 
-
-
-
 /*=================================ABOUT SECTION======================================*/
 
 /*--------------------HEADING-----------------------------------*/
@@ -207,14 +209,41 @@
 }
 /*--------------------HEADING-----------------------------------*/
 .btn {
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  border: 1px solid #5f1732;
-  padding: 1rem 1.5rem;
-  border-radius: 20rem;
-  color: #ccc;
-  background-image: linear-gradient(to right, #a517ba, #5f1732);
+  &:link,
+  &:visited {
+    text-decoration: none;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    border: 1px solid #5f1732;
+    padding: 1rem 1.5rem;
+    border-radius: 20rem;
+    color: #ccc;
+    background-image: linear-gradient(to right, #a517ba, #5f1732);
+    transition: all 0.4s;
+    &::after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-image: linear-gradient(to right, #a517ba, #5f1732);
+      border-radius: 20rem;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+  }
+
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transform: translateY(-1rem);
+    transition: all 0.4s;
+    &::after {
+      transform: scale(1.5);
+      opacity: 0;
+    }
+  }
 }
 .About-section {
   padding: 6rem 2rem;
@@ -445,7 +474,6 @@ footer {
   }
 }
 
-
 /*=================================MEDIA QUERIES=======================================================*/
 @media only screen and (max-width: 1025px) {
   .App--nav {
@@ -483,9 +511,8 @@ footer {
       display: block;
       position: sticky;
       top: 0;
-     
     }
- 
+
     &-links {
       display: none;
       li {
@@ -749,8 +776,7 @@ footer {
       }
     }
   }
-
- }
+}
 
 @media only screen and (max-width: 320px) {
   /*==========================client-section================================================================*/
