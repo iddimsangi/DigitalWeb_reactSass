@@ -11,6 +11,13 @@
   // align-items: center;
   .bars-icon {
     margin: 1rem;
+    background-color: orange;
+    position: fixed;
+    border-radius: 50%;
+    height: 3.5rem;
+    width: 3.5rem;
+    align-items: center;
+    z-index: 2000;
     display: none;
   }
   &-links {
@@ -28,6 +35,46 @@
       }
     }
   }
+
+/*----------------------------TOGGLE BARS-----------------------------------------------*/
+.toggle_bars {
+  display: none;
+}
+.toggle_bars:checked ~ &-links{
+  display: block;
+  position: absolute;
+  z-index: 1500;
+  top: 50%;
+  left: 50%;
+  height: 100vh;
+  transform: translate(-50%);
+  li{
+    display: block;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1rem;
+    background-image: linear-gradient(120deg, orange 0%, orange 50%, #fff 50%);
+    
+  }
+}
+.toggle_bars:checked ~ .toggle_background{
+  transform: scale(50);
+}
+.toggle_background{
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  position: fixed;
+  background-color:green;
+  top: 1.5rem;
+  right: 3.6rem;
+  z-index: 1000;
+  background-image: radial-gradient(#a517ba, #5f1732);
+  transition: all .8s;
+}
+/*----------------------------TOGGLE BARS-----------------------------------------------*/
+
+
+
 }
 .App-header {
   background-image: linear-gradient(to top left, #a517ba, #5f1732);
@@ -77,11 +124,16 @@
 .App-logo {
   height: 3.5rem;
   margin-top: 1rem;
+  // display: none;
   // margin-left:2.5rem;
 }
 .home-img {
   width: 50%;
 }
+
+
+
+
 /*=================================ABOUT SECTION======================================*/
 
 /*--------------------HEADING-----------------------------------*/
@@ -280,7 +332,7 @@
 footer {
   img {
     width: 100%;
-    margin-top: -.2rem;
+    margin-top: -0.2rem;
   }
   background-image: linear-gradient(to right, #a517ba, #5f1732);
   color: #ccc;
@@ -350,41 +402,33 @@ footer {
   }
 }
 
-/*----------------------------TOGGLE BARS-----------------------------------------------*/
-.toggle_bars {
-  display: none;
-}
-/*----------------------------TOGGLE BARS-----------------------------------------------*/
 
 /*=================================MEDIA QUERIES=======================================================*/
-@media only screen and (max-width:1025px){
+@media only screen and (max-width: 1025px) {
   .App--nav {
-    
     &-links {
       margin-right: 2rem;
     }
   }
 
-footer{
-
-  .footer-contents{
-    padding:1rem 4rem;
-    width: 100%;
-    margin-left: 0;
-    &--box{
-      &:nth-child(2){
-        padding-right: 1.5rem;
+  footer {
+    .footer-contents {
+      padding: 1rem 4rem;
+      width: 100%;
+      margin-left: 0;
+      &--box {
+        &:nth-child(2) {
+          padding-right: 1.5rem;
+        }
       }
     }
   }
 }
-
-}
-@media only screen and (max-width:769px){
-  .heading{
+@media only screen and (max-width: 769px) {
+  .heading {
     // font-size: 2rem;
   }
-  .why-section--content div h1{
+  .why-section--content div h1 {
     font-size: 3rem;
     margin-left: -4rem;
   }
@@ -392,11 +436,13 @@ footer{
 @media only screen and (max-width: 689px) {
   .App--nav {
     .bars-icon {
- margin-right: 2.5rem;
+      margin-right: 2.5rem;
       display: block;
       position: sticky;
       top: 0;
+     
     }
+ 
     &-links {
       display: none;
       li {
@@ -412,6 +458,10 @@ footer{
       }
     }
   }
+
+  // #navi_toggle:checked ~ .App--nav-links{
+  //   display: block;
+  // }
   .App-header {
     background-image: linear-gradient(to top left, #a517ba, #5f1732);
     width: 100%;
@@ -651,18 +701,13 @@ footer{
           margin-bottom: 1.3rem;
         }
       }
-      input{
+      input {
         width: 95%;
       }
     }
   }
 
-  /*----------------------------TOGGLE BARS-----------------------------------------------*/
-  .toggle_bars {
-    display: none;
-  }
-  /*----------------------------TOGGLE BARS-----------------------------------------------*/
-}
+ }
 
 @media only screen and (max-width: 320px) {
   /*==========================client-section================================================================*/
@@ -726,7 +771,7 @@ footer{
     }
   }
 }
-@media only screen and (max-width: 280px){
+@media only screen and (max-width: 280px) {
   .App-header {
     background-image: linear-gradient(to top left, #a517ba, #5f1732);
     width: 100%;
@@ -740,19 +785,19 @@ footer{
       margin-left: 10%;
     }
   }
-  .About-section--details--detail img{
+  .About-section--details--detail img {
     width: 6rem;
   }
   .why-section--content div h1 {
     margin: 0;
   }
 
-  .client-section{
+  .client-section {
     padding: 2rem;
-    .heading{
+    .heading {
       font-size: 1.6rem;
     }
-    .heading::after{
+    .heading::after {
       transform: translateY(1rem);
     }
     .clients {

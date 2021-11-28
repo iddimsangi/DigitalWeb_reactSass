@@ -24,8 +24,9 @@ import "./App.scss";
 function App() {
   return (
     <div className="App">
-      <input className="toggle_bars" type="checkbox" />
       <nav className="App--nav">
+      <input id="navi_toggle" type="checkbox" className="toggle_bars" />
+      <div className="toggle_background">&nbsp;</div>
         <img src={logo} alt="logo" className="App-logo" />
         <ul className="App--nav-links">
           <li>
@@ -44,7 +45,7 @@ function App() {
             <a href="#">contact</a>
           </li>
         </ul>
-        <label className="bars-icon" htmlFor="toggle_bars">
+        <label className="bars-icon" htmlFor="navi_toggle">
           <img src={bars} alt="bars-img" />
         </label>
       </nav>
