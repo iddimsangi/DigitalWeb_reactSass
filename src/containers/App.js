@@ -19,6 +19,7 @@ import email from "../images/icons8-email-64.png";
 import caller from "../images/icons8-call-64.png";
 import waves2 from "../images/wave2.png";
 import bars from "../images/icons8-menu-24.png";
+import cross from "../images/icons8-delete-24.png";
 import "./App.scss";
 
 function App() {
@@ -46,7 +47,8 @@ function App() {
           </li>
         </ul>
         <label className="bars-icon" htmlFor="navi_toggle">
-          <img src={bars} alt="bars-img" />
+          <img className="bars" src={bars} alt="bars-img" />
+          <img className="cross-icon" src={cross} alt="bars-img" />
         </label>
       </nav>
       <header className="App-header">

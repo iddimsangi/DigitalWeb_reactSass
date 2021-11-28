@@ -11,7 +11,7 @@
   // align-items: center;
   .bars-icon {
     margin: 1rem;
-    background-color: orange;
+    background-color: #8e259e;
     position: fixed;
     border-radius: 50%;
     height: 3.5rem;
@@ -19,6 +19,14 @@
     align-items: center;
     z-index: 2000;
     display: none;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    img, .cross-icon{
+      margin-left: .5rem;
+      margin-top: .5rem;
+    }
+    .cross-icon{
+      display: none;
+    }
   }
   &-links {
     list-style: none;
@@ -38,9 +46,29 @@
   }
 
 /*----------------------------TOGGLE BARS-----------------------------------------------*/
+@keyframes moveInRight {
+  0%{
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+}
 .toggle_bars {
   display: none;
 }
+.toggle_bars:checked ~ .bars-icon{
+  .bars{
+    display: none;
+  }
+  .cross-icon{
+    display: block;
+  }
+}
+
 .toggle_bars:checked ~ &-links{
   display: block;
   position: absolute;
@@ -53,17 +81,20 @@
   li{
     display: block;
     margin-bottom: 2.5rem;
+    animation: moveInRight .8s ease-in-out;
   a{
     &:link,
     &:visited{ 
       padding: 1rem 1.5rem;
-      background-image: linear-gradient(120deg, orange 0%, orange 50%, #fff 50%);
+      background-image: linear-gradient(120deg, #ca0d52 0%, #a517ba 50%, #fff 50%);
       background-size: 200%;
       transition: all .4s;
+      color: #fff;
     }
     &:hover,
     &:active{
       background-position: 100%;
+      color:#222
     }
   }
   }
@@ -76,7 +107,7 @@
   width: 3rem;
   border-radius: 50%;
   position: fixed;
-  background-color:green;
+  // background-color:green;
   top: 1.5rem;
   right: 3.6rem;
   z-index: 1000;
