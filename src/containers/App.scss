@@ -73,6 +73,7 @@
   }
 
   .toggle_bars:checked ~ &-links {
+    // background-color: orange;
     display: block;
     position: absolute;
     z-index: 1500;
@@ -80,47 +81,33 @@
     left: 35%;
     height: 100vh;
     width: 100%;
+    animation: moveInRight 0.8s ease-in-out;
     // transform: translate(-50%, 10%);
     li {
+      padding: 1rem 1.5rem;
+      // background-color: red;
       display: block;
       margin-bottom: 2.5rem;
-      animation: moveInRight 0.8s ease-in-out;
-      a {
-        &:link,
-        &:visited {
-          padding: 1rem 1.5rem;
-          background-image: linear-gradient(
-            120deg,
-            #ca0d52 0%,
-            #a517ba 50%,
-            #fff 50%
-          );
-          background-size: 200%;
-          transition: all 0.4s;
-          color: #fff;
-        }
-        &:hover,
-        &:active {
-          background-position: 100%;
-          color: #222;
-        }
+      width: 40%;
+      cursor: pointer;
+        background-image: linear-gradient(
+          140deg,
+          #ca0d52 0%,
+          #a517ba 50%,
+          #fff 50%
+        );
+        background-size: 200%;
+        transition: all 0.4s;
+        color: #fff;
+      &:hover,
+      &:active {
+        background-position: 100%;
+        color: #222;
       }
     }
   }
-  .toggle_bars:checked ~ .toggle_background {
-    transform: scale(50);
-  }
   .toggle_background {
-    height: 3rem;
-    width: 3rem;
-    border-radius: 50%;
-    position: fixed;
-    // background-color:green;
-    top: 1.5rem;
-    right: 3.6rem;
-    z-index: 1000;
-    background-image: radial-gradient(#a517ba, #5f1732);
-    transition: all 0.8s;
+  display: none;
   }
   /*----------------------------TOGGLE BARS-----------------------------------------------*/
 }
@@ -190,6 +177,7 @@
   background-color: #5f1732;
   transform: translateY(5.4rem);
   margin-left: 4rem;
+  opacity: 100;
 }
 .heading::after {
   content: "";
@@ -199,6 +187,7 @@
   background-color: #5f1732;
   transform: translateY(0.8rem);
   margin-left: 9rem;
+  opacity: 100;
 }
 .heading {
   text-transform: uppercase;
@@ -526,6 +515,28 @@ footer {
           // font-weight: 400;
         }
       }
+    }
+    .toggle_bars:checked ~ .toggle_background {
+      // opacity: 1;
+      // display:;
+      transform: scale(80);
+    }
+   
+    .toggle_background {
+      // display: none;
+      // opacity: 0;
+      // transform: translateX(500%);
+      display: block;
+      height: 3rem;
+      width: 3rem;
+      border-radius: 50%;
+      position: fixed;
+      // background-color:green;
+      top: 1.5rem;
+      right: 3.6rem;
+      z-index: 1000;
+      background-image: radial-gradient(#a517ba, #5f1732);
+      transition: all 0.8s;
     }
   }
 
