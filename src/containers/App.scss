@@ -101,8 +101,11 @@
         color: #fff;
       &:hover,
       &:active {
+        a{
+          color: #000;
+        }
         background-position: 100%;
-        color: #222;
+        // color:#222;
       }
     }
   }
