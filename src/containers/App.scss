@@ -86,9 +86,8 @@
     }
   }
 
- 
   .toggle_background {
-  display: none;
+    display: none;
   }
   /*----------------------------TOGGLE BARS-----------------------------------------------*/
 }
@@ -203,13 +202,14 @@
       top: 0;
       left: 0;
       z-index: -1;
+      transition: all .4s;
     }
   }
 
   &:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     transform: translateY(-1rem);
-    transition: all 0.4s;
+    // transition: all 0.4s;
     &::after {
       transform: scale(1.5);
       opacity: 0;
@@ -503,7 +503,7 @@ footer {
       // display:;
       transform: scale(80);
     }
-   
+
     .toggle_background {
       // display: none;
       // opacity: 0;
@@ -527,9 +527,9 @@ footer {
       display: flex;
       flex-direction: column;
       align-items: center;
-      
+
       top: 50%;
-      left:0;
+      left: 0;
       height: 100vh;
       width: 100%;
       // transform: translateX(0);
@@ -543,18 +543,18 @@ footer {
         margin-bottom: 2.5rem;
         width: 40%;
         cursor: pointer;
-          background-image: linear-gradient(
-            140deg,
-            #ca0d52 0%,
-            #a517ba 50%,
-            #fff 50%
-          );
-          background-size: 200%;
-          transition: all 0.4s;
-          color: #fff;
+        background-image: linear-gradient(
+          140deg,
+          #ca0d52 0%,
+          #a517ba 50%,
+          #fff 50%
+        );
+        background-size: 200%;
+        transition: all 0.4s;
+        color: #fff;
         &:hover,
         &:active {
-          a{
+          a {
             color: #000;
           }
           background-position: 100%;
